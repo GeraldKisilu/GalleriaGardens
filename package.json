@@ -1,0 +1,39 @@
+{
+  "dependencies": {
+    "next": "16.4.0",
+    "react": "19.2.1",
+    "react-dom": "19.2.1",
+    "sharp": "^0.35.4"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.0.0",
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "oxfmt": "^0.2.0",
+    "postcss": "^8.5.0",
+    "tailwindcss": "^4.0.0",
+    "typescript": "^5.7.0"
+  },
+  "engines": {
+    "node": "\u003e=20.9.0",
+    "pnpm": "^9 || ^10"
+  },
+  "name": "figma-make-app",
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "sharp",
+      "esbuild",
+      "unrs-resolver"
+    ]
+  },
+  "private": true,
+  "scripts": {
+    "dev": "NODE_OPTIONS=--no-deprecation next dev --port ${PORT:-3000} --hostname 0.0.0.0",
+    "build": "NODE_OPTIONS=--no-deprecation next build",
+    "start": "NODE_OPTIONS=--no-deprecation next start --port ${PORT:-3000} --hostname 0.0.0.0",
+    "format": "oxfmt"
+  },
+  "type": "module",
+  "version": "0.0.0"
+}
